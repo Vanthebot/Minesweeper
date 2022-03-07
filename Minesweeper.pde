@@ -57,10 +57,89 @@ public boolean isWon()
 public void displayLosingMessage()
 {
     //your code here
+    for(int r = 0; r < NUM_ROWS; r++){
+      for(int c = 0; c < NUM_COLS; c++){
+        if(buttons[r][c].clicked == false && mines.contains(buttons[r][c])){
+          buttons[r][c].clicked = true;
+        }
+      }
+    }
+     for(int i = 0; i < 20; i++)
+      buttons[8][i].setLabel(" ");
+          
+    buttons[9][0].setLabel(" ");
+    buttons[9][1].setLabel(" ");
+    buttons[9][2].setLabel(" ");
+    buttons[9][3].setLabel(" ");
+    buttons[9][4].setLabel("Y");
+    buttons[9][5].setLabel("O");
+    buttons[9][6].setLabel("U");
+    buttons[9][7].setLabel(""");
+    buttons[9][8].setLabel("R");
+    buttons[9][9].setLabel("E");
+    buttons[9][10].setLabel(" ");
+    buttons[9][11].setLabel("N");
+    buttons[9][12].setLabel("O");
+    buttons[9][13].setLabel("T");
+    buttons[9][14].setLabel("");
+    buttons[9][15].setLabel(" ");
+    buttons[9][16].setLabel(" ");
+    buttons[9][17].setLabel(" ");
+    buttons[9][18].setLabel(" ");
+    buttons[9][19].setLabel(" ");
+    buttons[10][0].setLabel(" ");
+    buttons[10][1].setLabel(" ");
+    buttons[10][2].setLabel(" ");
+    buttons[10][3].setLabel(" ");
+    buttons[10][4].setLabel(" ");
+    buttons[10][5].setLabel(" ");
+    buttons[10][6].setLabel("V");
+    buttons[10][7].setLabel("E");
+    buttons[10][8].setLabel("R");
+    buttons[10][9].setLabel("Y");
+    buttons[10][10].setLabel(" ");
+    buttons[10][11].setLabel("G");
+    buttons[10][12].setLabel("O");
+    buttons[10][13].setLabel("O");
+    buttons[10][14].setLabel("O");
+    buttons[10][15].setLabel("D");
+    buttons[10][16].setLabel(" ");
+    buttons[10][17].setLabel(" ");
+    buttons[10][18].setLabel(" ");
+    buttons[10][19].setLabel(" ");
+          
+    for(int i = 0; i < 20; i++)
+      buttons[11][i].setLabel(" ");
 }
 public void displayWinningMessage()
 {
     //your code here
+     for(int i = 0; i < 20; i++)
+      buttons[8][i].setLabel(" ");
+    
+    buttons[9][0].setLabel(" ");
+    buttons[9][1].setLabel(" ");
+    buttons[9][2].setLabel("N");
+    buttons[9][3].setLabel("O");
+    buttons[9][4].setLabel("T");
+    buttons[9][5].setLabel(" ");
+    buttons[9][6].setLabel("T");
+    buttons[9][7].setLabel("O");
+    buttons[9][8].setLabel("O");
+    buttons[9][9].setLabel(" ");
+    buttons[9][10].setLabel("S");
+    buttons[9][11].setLabel("H");
+    buttons[9][12].setLabel("A");
+    buttons[9][13].setLabel("B");
+    buttons[9][14].setLabel("B");
+    buttons[9][15].setLabel("Y");
+    buttons[9][16].setLabel("!");
+    buttons[9][17].setLabel(" ");
+    buttons[9][18].setLabel(" ");
+    buttons[9][19].setLabel(" ");
+    
+    for(int i = 0; i < 20; i++)
+      buttons[10][i].setLabel(" ");
 }
 public boolean isValid(int r, int c)
 {

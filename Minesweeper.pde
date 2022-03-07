@@ -30,7 +30,7 @@ public void setMines()
       int col = (int)(Math.random()*NUM_COLS);
       if (!mines.contains(row) && !mines.contains(col)) {
        mines.add(buttons[row][col]);
-       System.out.println(row + ", " + col);
+       //System.out.println(row + ", " + col);
       }
     }
 }
@@ -155,7 +155,7 @@ public int countMines(int row, int col)
          if (mines.contains(buttons[row][col]))
            numMines--;
       }
-    System.out.println("num: " + numMines);
+    //System.out.println("num: " + numMines);
     return numMines;
 }
 public class MSButton

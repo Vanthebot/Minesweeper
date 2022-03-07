@@ -21,14 +21,13 @@ void setup ()
         buttons[r][c] = new MSButton(r, c);
     
     setMines();
-    countMines(1,2);
 }
 public void setMines()
 {
     //your code
     while (mines.size() < NUM_MINES) {
-      int row = (int)(Math.random()*5);
-      int col = (int)(Math.random()*5);
+      int row = (int)(Math.random()*NUM_MINES);
+      int col = (int)(Math.random()*NUM_MINES);
       if (!mines.contains(row) && !mines.contains(col)) {
        mines.add(buttons[row][col]);
        System.out.println(row + ", " + col);
@@ -66,7 +65,6 @@ public void displayLosingMessage()
     }
      for(int i = 0; i < 20; i++)
       buttons[8][i].setLabel(" ");
-          
     buttons[9][0].setLabel(" ");
     buttons[9][1].setLabel(" ");
     buttons[9][2].setLabel(" ");
@@ -74,7 +72,7 @@ public void displayLosingMessage()
     buttons[9][4].setLabel("Y");
     buttons[9][5].setLabel("O");
     buttons[9][6].setLabel("U");
-    buttons[9][7].setLabel(""");
+    buttons[9][7].setLabel("'");
     buttons[9][8].setLabel("R");
     buttons[9][9].setLabel("E");
     buttons[9][10].setLabel(" ");
@@ -101,8 +99,8 @@ public void displayLosingMessage()
     buttons[10][11].setLabel("G");
     buttons[10][12].setLabel("O");
     buttons[10][13].setLabel("O");
-    buttons[10][14].setLabel("O");
-    buttons[10][15].setLabel("D");
+    buttons[10][14].setLabel("D");
+    buttons[10][15].setLabel(" ");
     buttons[10][16].setLabel(" ");
     buttons[10][17].setLabel(" ");
     buttons[10][18].setLabel(" ");
